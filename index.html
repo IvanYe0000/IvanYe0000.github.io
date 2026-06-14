@@ -10,7 +10,7 @@
   <style>
     /* ── Reset & Base ─────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     :root {
       --bg:       #F7F7F5;
       --surface:  #FFFFFF;
@@ -26,9 +26,9 @@
       --font-body:    'Inter', sans-serif;
       --font-mono:    'JetBrains Mono', monospace;
     }
-
+ 
     html { scroll-behavior: smooth; }
-
+ 
     body {
       background: var(--bg);
       color: var(--text);
@@ -37,17 +37,17 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-
+ 
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
+ 
     /* ── Layout ───────────────────────────────────────────────── */
     .container {
       max-width: 860px;
       margin: 0 auto;
       padding: 0 24px;
     }
-
+ 
     /* ── Nav ──────────────────────────────────────────────────── */
     nav {
       position: sticky;
@@ -57,14 +57,14 @@
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
     }
-
+ 
     .nav-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       height: 56px;
     }
-
+ 
     .nav-logo {
       font-family: var(--font-mono);
       font-size: 14px;
@@ -72,29 +72,29 @@
       font-weight: 500;
       letter-spacing: -0.01em;
     }
-
+ 
     .nav-logo span { color: var(--accent); }
-
+ 
     .nav-links {
       display: flex;
       gap: 28px;
       list-style: none;
     }
-
+ 
     .nav-links a {
       font-size: 14px;
       font-weight: 500;
       color: var(--muted);
       transition: color 0.15s;
     }
-
+ 
     .nav-links a:hover { color: var(--text); text-decoration: none; }
-
+ 
     /* ── Hero ─────────────────────────────────────────────────── */
     .hero {
       padding: 96px 0 80px;
     }
-
+ 
     .hero-eyebrow {
       display: inline-flex;
       align-items: center;
@@ -108,7 +108,7 @@
       padding: 4px 12px;
       margin-bottom: 28px;
     }
-
+ 
     .hero-eyebrow::before {
       content: '';
       width: 7px; height: 7px;
@@ -116,12 +116,12 @@
       border-radius: 50%;
       animation: pulse 2s ease-in-out infinite;
     }
-
+ 
     @keyframes pulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50%       { opacity: 0.4; transform: scale(0.85); }
     }
-
+ 
     .hero h1 {
       font-family: var(--font-display);
       font-size: clamp(40px, 7vw, 64px);
@@ -131,7 +131,7 @@
       color: var(--text);
       margin-bottom: 24px;
     }
-
+ 
     .hero h1 .cursor {
       display: inline-block;
       width: 3px;
@@ -142,12 +142,12 @@
       vertical-align: middle;
       animation: blink 1.1s step-end infinite;
     }
-
+ 
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50%       { opacity: 0; }
     }
-
+ 
     .hero-bio {
       font-size: 18px;
       color: var(--muted);
@@ -155,15 +155,15 @@
       line-height: 1.65;
       margin-bottom: 36px;
     }
-
+ 
     .hero-bio strong { color: var(--text); font-weight: 500; }
-
+ 
     .hero-actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
     }
-
+ 
     .btn {
       display: inline-flex;
       align-items: center;
@@ -177,20 +177,20 @@
       transition: all 0.15s;
       border: none;
     }
-
+ 
     .btn-outline {
       background: var(--surface);
       color: var(--text);
       border: 1px solid var(--border);
     }
-
+ 
     .btn-outline:hover {
       background: var(--bg);
       text-decoration: none;
       transform: translateY(-1px);
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     }
-
+ 
     /* ── Skills strip ─────────────────────────────────────────── */
     .skills-strip {
       display: flex;
@@ -201,7 +201,7 @@
       border-bottom: 1px solid var(--border);
       margin-bottom: 80px;
     }
-
+ 
     .skill-tag {
       font-family: var(--font-mono);
       font-size: 12px;
@@ -213,13 +213,13 @@
       color: var(--muted);
       transition: all 0.15s;
     }
-
+ 
     .skill-tag:hover {
       border-color: var(--accent);
       color: var(--accent);
       background: var(--accent-bg);
     }
-
+ 
     /* ── Section titles ───────────────────────────────────────── */
     .section-header {
       display: flex;
@@ -227,7 +227,7 @@
       gap: 12px;
       margin-bottom: 32px;
     }
-
+ 
     .section-label {
       font-family: var(--font-mono);
       font-size: 12px;
@@ -235,23 +235,23 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
-
+ 
     .section-title {
       font-family: var(--font-display);
       font-size: 28px;
       font-weight: 700;
       letter-spacing: -0.02em;
     }
-
+ 
     /* ── Projects grid ────────────────────────────────────────── */
     section.projects { margin-bottom: 80px; }
-
+ 
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 16px;
     }
-
+ 
     .project-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -264,40 +264,40 @@
       text-decoration: none;
       color: inherit;
     }
-
+ 
     .project-card:hover {
       border-color: var(--accent);
       transform: translateY(-3px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.08);
       text-decoration: none;
     }
-
+ 
     .project-icon {
       font-size: 28px;
       line-height: 1;
     }
-
+ 
     .project-name {
       font-family: var(--font-display);
       font-size: 17px;
       font-weight: 600;
       letter-spacing: -0.01em;
     }
-
+ 
     .project-desc {
       font-size: 14px;
       color: var(--muted);
       line-height: 1.55;
       flex: 1;
     }
-
+ 
     .project-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
       margin-top: 4px;
     }
-
+ 
     .project-tag {
       font-family: var(--font-mono);
       font-size: 11px;
@@ -307,7 +307,7 @@
       color: var(--accent);
       font-weight: 500;
     }
-
+ 
     .project-link-hint {
       font-size: 13px;
       color: var(--accent);
@@ -316,12 +316,12 @@
       align-items: center;
       gap: 4px;
     }
-
+ 
     /* ── About section ────────────────────────────────────────── */
     section.about {
       margin-bottom: 80px;
     }
-
+ 
     .about-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -332,30 +332,30 @@
       gap: 40px;
       align-items: start;
     }
-
+ 
     .about-text p {
       font-size: 15px;
       color: var(--muted);
       line-height: 1.7;
       margin-bottom: 14px;
     }
-
+ 
     .about-text p:last-child { margin-bottom: 0; }
     .about-text strong { color: var(--text); font-weight: 500; }
-
+ 
     .about-stats {
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
-
+ 
     .stat-item {
       padding: 16px 20px;
       background: var(--bg);
       border-radius: 8px;
       border: 1px solid var(--border);
     }
-
+ 
     .stat-value {
       font-family: var(--font-display);
       font-size: 26px;
@@ -363,13 +363,13 @@
       color: var(--text);
       letter-spacing: -0.02em;
     }
-
+ 
     .stat-label {
       font-size: 13px;
       color: var(--muted);
       margin-top: 2px;
     }
-
+ 
     /* ── Contact / Footer ─────────────────────────────────────── */
     .contact-bar {
       background: var(--text);
@@ -383,26 +383,26 @@
       flex-wrap: wrap;
       margin-bottom: 40px;
     }
-
+ 
     .contact-bar h2 {
       font-family: var(--font-display);
       font-size: 22px;
       font-weight: 700;
       letter-spacing: -0.02em;
     }
-
+ 
     .contact-bar p {
       font-size: 14px;
       color: rgba(255,255,255,0.55);
       margin-top: 4px;
     }
-
+ 
     .contact-links {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
     }
-
+ 
     .btn-white {
       background: #fff;
       color: var(--text);
@@ -415,13 +415,13 @@
       gap: 6px;
       transition: all 0.15s;
     }
-
+ 
     .btn-white:hover {
       background: #F0F0EE;
       text-decoration: none;
       transform: translateY(-1px);
     }
-
+ 
     footer {
       text-align: center;
       padding: 24px 0 40px;
@@ -429,7 +429,7 @@
       color: var(--muted);
       font-family: var(--font-mono);
     }
-
+ 
     /* ── Responsive ───────────────────────────────────────────── */
     @media (max-width: 620px) {
       .hero { padding: 64px 0 56px; }
@@ -437,7 +437,7 @@
       .contact-bar { flex-direction: column; align-items: flex-start; }
       .nav-links { display: none; }
     }
-
+ 
     @media (prefers-reduced-motion: reduce) {
       .cursor, .hero-eyebrow::before { animation: none; }
       .project-card:hover, .btn-outline:hover { transform: none; }
@@ -445,7 +445,7 @@
   </style>
 </head>
 <body>
-
+ 
   <!-- ── Nav ── -->
   <nav>
     <div class="container nav-inner">
@@ -457,9 +457,9 @@
       </ul>
     </div>
   </nav>
-
+ 
   <main class="container">
-
+ 
     <!-- ── Hero ── -->
     <section class="hero">
       <div class="hero-eyebrow">AP Computer Science Student</div>
@@ -473,49 +473,49 @@
         <a href="#projects" class="btn btn-outline">See Projects ↓</a>
       </div>
     </section>
-
-
-
+ 
+ 
+ 
     <!-- ── Projects ── -->
     <section class="projects" id="projects">
       <div class="section-header">
         <span class="section-label">// projects</span>
         <h2 class="section-title">Things I've Built</h2>
       </div>
-
+ 
       <div class="projects-grid">
-
+ 
         <a class="project-card" href="https://app.pickcode.io/project/cmmkol7xl5r1apu3k5w5oed4j" target="_blank" rel="noopener">
           <div class="project-icon">🧮</div>
           <div class="project-name">Game of Life</div>
           <p class="project-desc">A simulation where cells live, die, or multiply based on simple rules — creating surprisingly complex patterns from nothing.</p>
           <div class="project-link-hint">View Project →</div>
         </a>
-
+ 
         <a class="project-card" href="https://app.pickcode.io/project/cmh3i6rzi7wn06v8js0a6ppdq" target="_blank" rel="noopener">
           <div class="project-icon">🚦</div>
           <div class="project-name">Traffic Light</div>
           <p class="project-desc">An interactive traffic light that cycles through red, yellow, and green — built to practice event-driven programming and UI logic.</p>
           <div class="project-link-hint">View Project →</div>
         </a>
-
+ 
         <a class="project-card" href="https://app.pickcode.io/project/cmgi25bljc8sdpfk7nwq146q5" target="_blank" rel="noopener">
           <div class="project-icon">🔨</div>
           <div class="project-name">Whack a Mole</div>
           <p class="project-desc">A fast-paced clicking game where moles pop up randomly and you race to whack them before time runs out.</p>
           <div class="project-link-hint">View Project →</div>
         </a>
-
+ 
       </div>
     </section>
-
+ 
     <!-- ── About ── -->
     <section class="about" id="about">
       <div class="section-header">
         <span class="section-label">// about</span>
         <h2 class="section-title">A Bit About Me</h2>
       </div>
-
+ 
       <div class="about-card">
         <div class="about-text">
           <p>
@@ -550,7 +550,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- ── Contact ── -->
     <div class="contact-bar" id="contact">
       <div>
@@ -563,14 +563,15 @@
         </a>
       </div>
     </div>
-
+ 
   </main>
-
+ 
   <footer>
     <div class="container">
       built with HTML, CSS &amp; curiosity · IvanYe 2025
     </div>
   </footer>
-
+ 
 </body>
 </html>
+ 
