@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Your Name] — Portfolio</title>
+  <title>IvanYe — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -176,18 +176,6 @@
       cursor: pointer;
       transition: all 0.15s;
       border: none;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    .btn-primary:hover {
-      background: #1d4ed8;
-      text-decoration: none;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(37,99,235,0.25);
     }
 
     .btn-outline {
@@ -434,26 +422,6 @@
       transform: translateY(-1px);
     }
 
-    .btn-ghost-white {
-      background: transparent;
-      color: rgba(255,255,255,0.75);
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 10px 18px;
-      font-size: 14px;
-      font-weight: 500;
-      border-radius: 8px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.15s;
-    }
-
-    .btn-ghost-white:hover {
-      color: #fff;
-      border-color: rgba(255,255,255,0.5);
-      text-decoration: none;
-    }
-
     footer {
       text-align: center;
       padding: 24px 0 40px;
@@ -472,7 +440,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       .cursor, .hero-eyebrow::before { animation: none; }
-      .project-card:hover, .btn-primary:hover, .btn-outline:hover { transform: none; }
+      .project-card:hover, .btn-outline:hover { transform: none; }
     }
   </style>
 </head>
@@ -481,7 +449,7 @@
   <!-- ── Nav ── -->
   <nav>
     <div class="container nav-inner">
-      <span class="nav-logo"><span>//</span> [your-name]</span>
+      <span class="nav-logo"><span>//</span> IvanYe</span>
       <ul class="nav-links">
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
@@ -495,17 +463,13 @@
     <!-- ── Hero ── -->
     <section class="hero">
       <div class="hero-eyebrow">AP Computer Science Student</div>
-      <h1>Hi, I'm<br>[Your Name]<span class="cursor"></span></h1>
+      <h1>Hi, I'm<br>IvanYe<span class="cursor"></span></h1>
       <p class="hero-bio">
         I'm a <strong>high school student</strong> passionate about building things with code.
         From algorithms to apps, I love turning ideas into working software — and learning
         something new every step of the way.
       </p>
       <div class="hero-actions">
-        <a href="https://github.com/[your-repo-url]" class="btn btn-primary" target="_blank" rel="noopener">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          View GitHub
-        </a>
         <a href="#projects" class="btn btn-outline">See Projects ↓</a>
       </div>
     </section>
@@ -533,7 +497,7 @@
 
       <div class="projects-grid">
 
-        <a class="project-card" href="https://github.com/[your-repo-url]/project-one" target="_blank" rel="noopener">
+        <div class="project-card">
           <div class="project-icon">🧮</div>
           <div class="project-name">Project One</div>
           <p class="project-desc">A short description of what this project does and what problem it solves. Keep it punchy — two sentences max.</p>
@@ -541,10 +505,9 @@
             <span class="project-tag">Java</span>
             <span class="project-tag">OOP</span>
           </div>
-          <div class="project-link-hint">View on GitHub →</div>
-        </a>
+        </div>
 
-        <a class="project-card" href="https://github.com/[your-repo-url]/project-two" target="_blank" rel="noopener">
+        <div class="project-card">
           <div class="project-icon">🌐</div>
           <div class="project-name">Project Two</div>
           <p class="project-desc">Describe what makes this project interesting. What did you learn? What was the hardest part to build?</p>
@@ -552,10 +515,9 @@
             <span class="project-tag">Python</span>
             <span class="project-tag">API</span>
           </div>
-          <div class="project-link-hint">View on GitHub →</div>
-        </a>
+        </div>
 
-        <a class="project-card" href="https://github.com/[your-repo-url]/project-three" target="_blank" rel="noopener">
+        <div class="project-card">
           <div class="project-icon">📊</div>
           <div class="project-name">Project Three</div>
           <p class="project-desc">A project that shows off your understanding of data structures or algorithms — sorting, graphs, trees, etc.</p>
@@ -563,18 +525,7 @@
             <span class="project-tag">Java</span>
             <span class="project-tag">Algorithms</span>
           </div>
-          <div class="project-link-hint">View on GitHub →</div>
-        </a>
-
-        <a class="project-card" href="https://github.com/[your-repo-url]" target="_blank" rel="noopener">
-          <div class="project-icon">✨</div>
-          <div class="project-name">More on GitHub</div>
-          <p class="project-desc">Browse all my repositories, homework projects, and experiments. Always something new in progress.</p>
-          <div class="project-tags">
-            <span class="project-tag">All repos</span>
-          </div>
-          <div class="project-link-hint">github.com/[your-username] →</div>
-        </a>
+        </div>
 
       </div>
     </section>
@@ -589,8 +540,8 @@
       <div class="about-card">
         <div class="about-text">
           <p>
-            I'm a <strong>[grade] student at [Your School]</strong>, currently enrolled in
-            AP Computer Science A. I started coding in [year] and haven't stopped since —
+            I'm an <strong>11th grade student at FDR School</strong>, currently enrolled in
+            AP Computer Science A. I started coding in 2025 and haven't stopped since —
             what began as curiosity turned into a genuine love for problem-solving.
           </p>
           <p>
@@ -631,10 +582,6 @@
         <a href="mailto:[your@email.com]" class="btn-white">
           ✉ Email Me
         </a>
-        <a href="https://github.com/[your-repo-url]" target="_blank" rel="noopener" class="btn-ghost-white">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub
-        </a>
       </div>
     </div>
 
@@ -642,10 +589,9 @@
 
   <footer>
     <div class="container">
-      built with HTML, CSS &amp; curiosity · [Your Name] [year]
+      built with HTML, CSS &amp; curiosity · IvanYe 2025
     </div>
   </footer>
 
 </body>
 </html>
-
